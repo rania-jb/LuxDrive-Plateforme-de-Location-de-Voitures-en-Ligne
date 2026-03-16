@@ -1,0 +1,56 @@
+// Action types for authentication
+export const LOGIN_REQUEST         = 'LOGIN_REQUEST';
+export const LOGIN_SUCCESS         = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL            = 'LOGIN_FAIL';
+
+export const REGISTER_REQUEST      = 'REGISTER_REQUEST';
+export const REGISTER_SUCCESS      = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL         = 'REGISTER_FAIL';
+
+export const LOGOUT                = 'LOGOUT';
+
+export const UPDATE_PROFILE_REQUEST = 'UPDATE_PROFILE_REQUEST';
+export const UPDATE_PROFILE_SUCCESS = 'UPDATE_PROFILE_SUCCESS';
+export const UPDATE_PROFILE_FAIL    = 'UPDATE_PROFILE_FAIL';
+
+export const CLEAR_AUTH_ERROR      = 'CLEAR_AUTH_ERROR'; // New action type to clear authentication errors
+
+// Action types for car management
+export const FETCH_CARS_REQUEST       = 'FETCH_CARS_REQUEST';
+export const FETCH_CARS_SUCCESS       = 'FETCH_CARS_SUCCESS';
+export const FETCH_CARS_FAIL          = 'FETCH_CARS_FAIL';
+
+export const FETCH_CAR_REQUEST        = 'FETCH_CAR_REQUEST';
+export const FETCH_CAR_SUCCESS        = 'FETCH_CAR_SUCCESS';
+export const FETCH_CAR_FAIL           = 'FETCH_CAR_FAIL';
+
+export const CREATE_CAR_REQUEST       = 'CREATE_CAR_REQUEST';
+export const CREATE_CAR_SUCCESS       = 'CREATE_CAR_SUCCESS';
+export const CREATE_CAR_FAIL          = 'CREATE_CAR_FAIL';
+
+export const UPDATE_CAR_REQUEST       = 'UPDATE_CAR_REQUEST';
+export const UPDATE_CAR_SUCCESS       = 'UPDATE_CAR_SUCCESS';
+export const UPDATE_CAR_FAIL          = 'UPDATE_CAR_FAIL';
+
+export const DELETE_CAR_SUCCESS       = 'DELETE_CAR_SUCCESS';
+
+// Action types for booking management
+export const FETCH_MY_RESERVATIONS_REQUEST  = 'FETCH_MY_RESERVATIONS_REQUEST';
+export const FETCH_MY_RESERVATIONS_SUCCESS  = 'FETCH_MY_RESERVATIONS_SUCCESS';
+export const FETCH_MY_RESERVATIONS_FAIL     = 'FETCH_MY_RESERVATIONS_FAIL';
+
+export const FETCH_ALL_RESERVATIONS_REQUEST = 'FETCH_ALL_RESERVATIONS_REQUEST';
+export const FETCH_ALL_RESERVATIONS_SUCCESS = 'FETCH_ALL_RESERVATIONS_SUCCESS';
+export const FETCH_ALL_RESERVATIONS_FAIL    = 'FETCH_ALL_RESERVATIONS_FAIL';
+
+export const CREATE_RESERVATION_REQUEST     = 'CREATE_RESERVATION_REQUEST';
+export const CREATE_RESERVATION_SUCCESS     = 'CREATE_RESERVATION_SUCCESS';
+export const CREATE_RESERVATION_FAIL        = 'CREATE_RESERVATION_FAIL';
+
+export const CANCEL_RESERVATION_SUCCESS     = 'CANCEL_RESERVATION_SUCCESS';
+export const UPDATE_RESERVATION_STATUS      = 'UPDATE_RESERVATION_STATUS';
+
+export const CLEAR_RESERVATION_ERROR        = 'CLEAR_RESERVATION_ERROR';
+export const CLEAR_BOOKING_SUCCESS          = 'CLEAR_BOOKING_SUCCESS';
+
+

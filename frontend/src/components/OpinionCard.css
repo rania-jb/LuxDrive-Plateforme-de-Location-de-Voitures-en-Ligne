@@ -1,0 +1,92 @@
+/* ============================================
+   OPINION CARD — LuxDrive
+   ============================================ */
+
+.opinion-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 32px 28px;
+  border-radius: 24px;
+  text-align: left;
+  box-shadow:
+    0 4px 24px rgba(78, 70, 229, 0.5),
+    0 1px 0 rgba(255, 255, 255, 0.9) inset;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.opinion-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 16px 40px rgba(79, 70, 229, 0.12),
+    0 1px 0 rgba(255, 255, 255, 0.9) inset;
+}
+
+/* Stars — top */
+.stars {
+  display: flex;
+  gap: 4px;
+  color: #f59e0b;
+  font-size: 15px;
+}
+
+.stars svg {
+  transition: transform 0.2s ease;
+}
+
+.stars svg:hover {
+  transform: scale(1.2);
+}
+
+/* Quote text */
+.opinion-card p {
+  font-size: 14.5px;
+  color: #374151;
+  line-height: 1.75;
+  font-style: italic;
+  margin: 0;
+  flex: 1;
+}
+
+/* Author row */
+.opinion-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.opinion-card img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(79, 70, 229, 0.2);
+}
+
+.opinion-card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.opinion-card .author-role {
+  font-size: 12px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .opinion-card {
+    padding: 24px 20px;
+  }
+}
