@@ -2,7 +2,7 @@ const express = require("express");
 const route = express.Router();
 const Reservation = require("../Models/Reservation");
 const Car = require("../Models/Car");
-const { auth, isAdmin } = require("../middleware/auth");
+const { auth, isAdmin } = require("../Middleware/auth");
 
 // ── GET périodes réservées d'une voiture (public) ──
 route.get("/booked-periods/:carId", async (req, res) => {
