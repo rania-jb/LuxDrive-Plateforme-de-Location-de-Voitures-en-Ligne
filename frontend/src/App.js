@@ -36,11 +36,13 @@ const Layout = ({ children }) => {
   const location = useLocation(); // Get current path
 
   const isAuthPage = ["/login", "/register"].includes(location.pathname); // Check if current path is login or register
+  const isAdminPage = location.pathname.startsWith("/admin");
+
   return (
     <>
       {!isAuthPage && <Navbar />}
       {children}
-      {!isAuthPage && <Footer />}
+      {!isAuthPage && !isAdminPage && <Footer />}
     </>
   );
 };
