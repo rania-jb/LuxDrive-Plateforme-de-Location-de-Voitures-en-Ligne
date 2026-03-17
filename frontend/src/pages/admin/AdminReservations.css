@@ -572,6 +572,53 @@
 }
 
 /* Responsive */
+@media (max-width: 768px) {
+  .ar-header {
+    flex-direction: column;
+    padding-top: 56px; /* espace burger */
+  }
+
+  .ar-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ar-card {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .ar-car-img {
+    width: 60px; height: 44px;
+  }
+
+  .car-col   { flex: 1; min-width: 140px; }
+  .user-col  { flex: 1; min-width: 140px; }
+  .price-col { flex-direction: row; align-items: center; }
+
+  .status-col  { 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 8px; 
+    width: 100%;
+  }
+
+  .actions-col { 
+    width: 100%; 
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .ar-user-email { max-width: 100px; }
+}
+
+@media (max-width: 480px) {
+  .ar-tabs { gap: 6px; }
+  .ar-tab  { padding: 7px 12px; font-size: 12px; }
+  .ar-card { border-radius: 14px; }
+}
+
 @media (max-width: 1024px) {
   .ar-card {
     flex-wrap: wrap;

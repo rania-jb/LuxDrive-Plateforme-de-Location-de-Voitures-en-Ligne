@@ -6,15 +6,15 @@
   display: flex;
   min-height: 100vh;
   padding-top: 80px;
-  background: #f8faff;
+  background: #f8faff; /* ← même couleur partout */
   font-family: "DM Sans", sans-serif;
 }
 
-/* ── MAIN ── */
 .admin-main {
   flex: 1;
   margin-left: 210px;
   padding: 40px 36px;
+  background: #f8faff; /* ← même couleur que layout */
 }
 
 /* ── HEADER ── */
@@ -304,24 +304,19 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
-  .dash-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .dash-bottom {
-    grid-template-columns: 1fr;
-  }
+  .dash-stats  { grid-template-columns: repeat(2, 1fr); }
+  .dash-bottom { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-  .admin-sidebar {
-    display: none;
-  }
   .admin-main {
     margin-left: 0;
-    padding: 24px 16px;
+    padding: 20px 16px;
+    background: #f8faff;
   }
+  .dash-header { margin-top: 48px; } /* espace pour le burger */
+  .dash-stats  { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 480px) {
-  .dash-stats {
-    grid-template-columns: 1fr 1fr;
-  }
+  .dash-stats { grid-template-columns: 1fr; }
+  .dash-header h1 { font-size: 22px; }
 }
