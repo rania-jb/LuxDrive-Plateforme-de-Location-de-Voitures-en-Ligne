@@ -308,6 +308,9 @@
   .dash-bottom { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
+  .admin-sidebar {
+    display: none;
+  }
   .admin-main {
     margin-left: 0;
     padding: 20px 16px;
@@ -317,6 +320,7 @@
   .dash-stats  { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 480px) {
-  .dash-stats { grid-template-columns: 1fr; }
+  .dash-stats { grid-template-columns: 1fr 1fr; }
   .dash-header h1 { font-size: 22px; }
 }
+
